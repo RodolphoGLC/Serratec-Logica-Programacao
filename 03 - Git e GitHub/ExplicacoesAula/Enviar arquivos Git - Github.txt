@@ -1,0 +1,128 @@
+Passo a passo p/ enviar arquivos p/ Git
+
+Abre a pasta que quer enviar, abre o git bash
+
+ggkk8@DESKTOP-6GKIT30 MINGW64 /c/Logica2023
+$ git init
+Initialized empty Git repository in C:/Logica2023/.git/
+
+ggkk8@DESKTOP-6GKIT30 MINGW64 /c/Logica2023 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Aula2/
+        texto2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ggkk8@DESKTOP-6GKIT30 MINGW64 /c/Logica2023 (main)
+$ git add .
+warning: in the working copy of 'Aula2/Condicional.por', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Aula2/DiaEscolha.por', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Aula2/DiaSemana.por', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Aula2/Exercicios/ex1.por', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Aula2/Exercicios/ex10.por', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Aula2/Exercicios/ex11.por', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Aula2/Exercicios/ex12.por', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Aula2/Exercicios/ex2.por', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Aula2/Exercicios/ex6.por', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Aula2/Exercicios/ex7.por', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Aula2/Exercicios/ex9.por', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Aula2/NumeroSe.por', LF will be replaced by CRLF the next time Git touches it
+
+ggkk8@DESKTOP-6GKIT30 MINGW64 /c/Logica2023 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Aula2/CalculadoraEscolha.por
+        new file:   Aula2/CompeticaoSe.por
+        new file:   Aula2/Condicional.por
+        new file:   Aula2/DiaEscolha.por
+        new file:   Aula2/DiaSemana.por
+        new file:   Aula2/Exercicios/ex1.por
+        new file:   Aula2/Exercicios/ex10.por
+        new file:   Aula2/Exercicios/ex11.por
+        new file:   Aula2/Exercicios/ex12.por
+        new file:   Aula2/Exercicios/ex2.por
+        new file:   Aula2/Exercicios/ex3.por
+        new file:   Aula2/Exercicios/ex4.por
+        new file:   Aula2/Exercicios/ex5.por
+        new file:   Aula2/Exercicios/ex6.por
+        new file:   Aula2/Exercicios/ex7.por
+        new file:   Aula2/Exercicios/ex8.por
+        new file:   Aula2/Exercicios/ex9.por
+        new file:   Aula2/NumeroSe.por
+        new file:   texto2.txt
+
+
+ggkk8@DESKTOP-6GKIT30 MINGW64 /c/Logica2023 (main)
+$ git commit -m "Primeiro commit das aulas de lógica"
+[main (root-commit) 796424b] Primeiro commit das aulas de lógica
+ 19 files changed, 788 insertions(+)
+ create mode 100644 Aula2/CalculadoraEscolha.por
+ create mode 100644 Aula2/CompeticaoSe.por
+ create mode 100644 Aula2/Condicional.por
+ create mode 100644 Aula2/DiaEscolha.por
+ create mode 100644 Aula2/DiaSemana.por
+ create mode 100644 Aula2/Exercicios/ex1.por
+ create mode 100644 Aula2/Exercicios/ex10.por
+ create mode 100644 Aula2/Exercicios/ex11.por
+ create mode 100644 Aula2/Exercicios/ex12.por
+ create mode 100644 Aula2/Exercicios/ex2.por
+ create mode 100644 Aula2/Exercicios/ex3.por
+ create mode 100644 Aula2/Exercicios/ex4.por
+ create mode 100644 Aula2/Exercicios/ex5.por
+ create mode 100644 Aula2/Exercicios/ex6.por
+ create mode 100644 Aula2/Exercicios/ex7.por
+ create mode 100644 Aula2/Exercicios/ex8.por
+ create mode 100644 Aula2/Exercicios/ex9.por
+ create mode 100644 Aula2/NumeroSe.por
+ create mode 100644 texto2.txt
+
+Cria um repositorio no GitHub, e use o link de lá do SSH
+
+ggkk8@DESKTOP-6GKIT30 MINGW64 /c/Logica2023 (main)
+$ git remote add origin https://github.com/RodolphoGLC/Serratec-Logica-Programacao.git (HTTPS - dará erro)
+
+ggkk8@DESKTOP-6GKIT30 MINGW64 /c/Logica2023 (main)
+$ git remote -v
+origin  https://github.com/RodolphoGLC/Serratec-Logica-Programacao.git (fetch)
+origin  https://github.com/RodolphoGLC/Serratec-Logica-Programacao.git (push)
+
+ggkk8@DESKTOP-6GKIT30 MINGW64 /c/Logica2023 (main)
+$ git push -u origin main
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/RodolphoGLC/Serratec-Logica-Programacao.git/'
+
+ggkk8@DESKTOP-6GKIT30 MINGW64 /c/Logica2023 (main) (P/ remover o erro c/ o HTTPS)
+$ git remote remove origin
+
+ggkk8@DESKTOP-6GKIT30 MINGW64 /c/Logica2023 (main) (SSH)
+$ git remote add origin git@github.com:RodolphoGLC/Serratec-Logica-Programacao.git
+
+ggkk8@DESKTOP-6GKIT30 MINGW64 /c/Logica2023 (main)
+$ git push -u origin main
+The authenticity of host 'github.com (20.201.28.151)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (23/23), 8.02 KiB | 2.00 MiB/s, done.
+Total 23 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), done.
+To github.com:RodolphoGLC/Serratec-Logica-Programacao.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
