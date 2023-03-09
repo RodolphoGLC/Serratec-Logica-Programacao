@@ -1,0 +1,16 @@
+PowerShell
+
+-> Comandos
+
+	cd Pasta -> Abre aquela pasta
+	cd .. -> Volta 1 pasta
+	dir -> Lista as pastas no diretório
+	cls -> Limpa tela
+	mkdir Pasta -> Cria uma página
+
+	echo "texto" -> Escreva do windows
+	echo "texto" > arquivo.txt -> Escreve no arquivo (sobrescreve o arquivo)
+	echo "texto" >> arquivo.txt -> Escreve no arquivo (adiciona algo a mais no arquivo)
+	type Arquivo -> Escreve o que está no arquivo na tela
+	mv NomeOriginal NovoNome ->Torca nome do arquivo
+	
