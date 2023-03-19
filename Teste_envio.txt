@@ -1,8 +1,0 @@
-Testando git push apenas
-Ver se só será enviado isso
-Testando A criação da nova branch
-	git branch nome - cria
-	git checkout branck - troca 
-OIIII
-Serratec
-
